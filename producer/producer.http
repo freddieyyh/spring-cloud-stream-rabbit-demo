@@ -1,0 +1,37 @@
+POST http://localhost:8080/send
+Content-Type: application/json
+
+{
+  "domain": "DOMAIN1",
+  "event": "CREATE",
+  "message": {
+    "id" : 1,
+    "desc" : "hoho"
+  }
+}
+
+###
+POST http://localhost:8080/send
+Content-Type: application/json
+
+{
+  "domain": "DOMAIN1",
+  "event": "UPDATE",
+  "message": {
+    "id" : 1,
+    "desc" : "hoho"
+  }
+}
+
+###
+POST http://localhost:8080/send
+Content-Type: application/json
+
+{
+  "domain": "DOMAIN2",
+  "event": "UPDATE",
+  "message": {
+    "id" : 1,
+    "desc" : "hoho"
+  }
+}
